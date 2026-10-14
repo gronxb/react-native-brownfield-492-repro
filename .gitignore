@@ -1,0 +1,23 @@
+# OS / editors
+.DS_Store
+.idea/
+*.iml
+
+# Node
+node_modules/
+
+# Gradle / Android
+.gradle/
+.kotlin/
+.cxx/
+build/
+local.properties
+*.apk
+*.aar
+# brownfield-gradle-plugin copies native libs into the module
+**/*.so
+
+# iOS
+**/Pods/
+DerivedData/
+xcuserdata/
