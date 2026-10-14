@@ -1,5 +1,4 @@
 FATAL EXCEPTION: main
-Process: com.example.host, PID: 5286
 java.lang.ExceptionInInitializerError
 	at com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost(DefaultReactHost.kt:95)
 	at com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost$default(DefaultReactHost.kt:60)
@@ -9,7 +8,10 @@ java.lang.ExceptionInInitializerError
 	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:83)
 	at com.rnapp.ReactNativeHostManager.initialize$lambda$1(ReactNativeHostManager.kt:13)
 	at com.rnapp.ReactNativeHostManager.initialize(ReactNativeHostManager.kt:25)
-	at com.example.host.MainActivity.onCreate(MainActivity.kt:15)
+	at com.example.host.MainActivity.openReactNative(MainActivity.kt:86)
+	at com.example.host.MainActivity.onCreate$lambda$4$lambda$3(MainActivity.kt:50)
+	at com.example.host.MainActivity.$r8$lambda$YFrGINZQqkIYiH1uP7T-d8mf40M(MainActivity.kt:0)
+	at com.example.host.MainActivity$$ExternalSyntheticLambda1.onClick(D8$$SyntheticClass:0)
 Caused by: java.lang.IllegalStateException: SoLoader.init() not yet called
 	at com.facebook.soloader.SoLoader.assertInitialized(SoLoader.java:1273)
 	at com.facebook.soloader.SoLoader.loadLibraryOnNonAndroid(SoLoader.java:880)
